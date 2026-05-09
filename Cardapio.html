@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Espetinho Dourado</title>
+    <style>
+        /* Importando uma fonte bonita do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-bottom: 40px;
+        }
+
+        /* O cabeçalho com o nome do espetinho */
+        header {
+            background-color: #1c1c1c;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 3px solid #FFD700;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            color: #FFD700; /* Cor Dourada */
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* O container que segura o cardápio no centro da tela */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cada caixinha de categoria (Espetos, Bebidas) */
+        .category {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .category-title {
+            color: #FFD700;
+            font-size: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .category-subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        /* Linha de cada item do cardápio */
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .item-name {
+            color: #eeeeee;
+        }
+
+        /* Os pontinhos automáticos entre o nome e o preço */
+        .dotted-leader {
+            flex-grow: 1;
+            border-bottom: 2px dotted #444;
+            margin: 0 10px;
+            position: relative;
+            top: -4px;
+        }
+
+        .item-price {
+            color: #4caf50; /* Verde bonitão pro preço */
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* Rodapé final */
+        footer {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Espetinho Dourado</h1>
+        <p>Os melhores espetos caseiros!</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="category">
+            <h2 class="category-title">🍢 Espetinhos</h2>
+            <p class="category-subtitle">Todos os espetos acompanham mandioca</p>
+            
+            <div class="menu-item">
+                <span class="item-name">Carne</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 13,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Medalhão</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 13,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Linguiça</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 13,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Coração</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 13,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Costela</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 15,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Queijo</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 15,00</span>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">🍻 Bebidas</h2>
+            
+            <div class="menu-item">
+                <span class="item-name">Coca-Cola (1.5L)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 15,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Guaraná Mineiro (1.5L)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 10,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Refrigerante (Lata)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 6,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Suco (Caixinha)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 4,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Água com Gás</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 4,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Água Mineral</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 3,00</span>
+            </div>
+            
+            <br> <div class="menu-item">
+                <span class="item-name">Heineken</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 8,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Original (Lata)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 6,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Demais cervejas (Lata)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 5,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Dose (Bebida Quente)</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 5,00</span>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">🍬 Bomboniere & Diversos</h2>
+            
+            <div class="menu-item">
+                <span class="item-name">Batata Salgadinho</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 5,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Chocolate Prestígio</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 5,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Trident</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 4,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Halls</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 2,00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Fósforo</span>
+                <span class="dotted-leader"></span>
+                <span class="item-price">R$ 1,00</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>Obrigado pela preferência!</p>
+        </footer>
+
+    </div>
+</body>
+</html>
